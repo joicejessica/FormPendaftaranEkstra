@@ -46,28 +46,50 @@
         android:layout_gravity="center"
         android:src="@drawable/logo" />
 
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editTextNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:hint="Nama" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editTextKelas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kelas"
+                android:inputType="numberSigned" />
+
+        </android.support.design.widget.TextInputLayout>
+
         <TextView
-            android:id="@+id/textViewNama"
+            android:id="@+id/textViewAK"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nama" />
+            android:text="Angkatan" />
 
-        <EditText
-            android:id="@+id/editTextNama"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal" />
-
-        <TextView
-            android:id="@+id/textView4"
+        <CheckBox
+            android:id="@+id/checkBox24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Kelas :" />
+            android:checked="false"
+            android:text="24" />
 
-        <EditText
-            android:id="@+id/editTextKelas"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+        <CheckBox
+            android:id="@+id/checkBox25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="25" />
 
         <Spinner
             android:id="@+id/spinnerJurusan"
@@ -79,82 +101,40 @@
             android:layout_height="wrap_content">
 
             <RadioButton
-                android:id="@+id/radioButtonPAS"
+                android:id="@+id/radioButtonVY"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:text="PASKIBRA" />
+                android:text="Volly" />
 
             <RadioButton
-                android:id="@+id/radioButtonPA"
+                android:id="@+id/radioButtonBT"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:text="PALWAGA" />
+                android:text="Basket" />
 
             <RadioButton
-                android:id="@+id/radioButtonPMR"
+                android:id="@+id/radioButtonFL"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:text="PMR" />
-
-            <RadioButton
-                android:id="@+id/radioButtonCMT"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="false"
-                android:text="COMET" />
-
-            <RadioButton
-                android:id="@+id/radioButtonMC"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="false"
-                android:text="METIC" />
-
-            <RadioButton
-                android:id="@+id/radioButtonTB"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="false"
-                android:text="TSBC" />
-
-            <RadioButton
-                android:id="@+id/radioButtonTV"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="false"
-                android:text="TSVC" />
-
-            <RadioButton
-                android:id="@+id/radioButtonTF"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="false"
-                android:text="TSFC" />
-
-            <RadioButton
-                android:id="@+id/radioButtonTC"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="false"
-                android:text="TSCC" />
-
-            <RadioButton
-                android:id="@+id/radioButtonMN"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="false"
-                android:text="MEDSAN" />
-
-            <RadioButton
-                android:id="@+id/radioButtonMAC"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="false"
-                android:text="MAC" />
+                android:text="Futsal" />
         </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonSelesai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Selesai" />
+
+        <TextView
+            android:id="@+id/textViewDL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detail"
+            android:textColor="@color/design_textinput_error_color_light" />
 
     </LinearLayout>
 </ScrollView>
