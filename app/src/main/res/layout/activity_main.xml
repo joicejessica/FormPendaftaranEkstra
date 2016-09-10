@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -28,7 +33,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView2"
         android:layout_gravity="center"
-        android:text="Pendaftaran Ekstrakulikuler"
+        android:text="Pendaftaran SubOrganisasi"
         android:textColor="@color/abc_input_method_navigation_guard" />
 
     <ImageView
@@ -41,4 +46,115 @@
         android:layout_gravity="center"
         android:src="@drawable/logo" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/textViewNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama" />
+
+        <EditText
+            android:id="@+id/editTextNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kelas :" />
+
+        <EditText
+            android:id="@+id/editTextKelas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/spinnerJurusan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButtonPAS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="PASKIBRA" />
+
+            <RadioButton
+                android:id="@+id/radioButtonPA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="PALWAGA" />
+
+            <RadioButton
+                android:id="@+id/radioButtonPMR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="PMR" />
+
+            <RadioButton
+                android:id="@+id/radioButtonCMT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="COMET" />
+
+            <RadioButton
+                android:id="@+id/radioButtonMC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="METIC" />
+
+            <RadioButton
+                android:id="@+id/radioButtonTB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="TSBC" />
+
+            <RadioButton
+                android:id="@+id/radioButtonTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="TSVC" />
+
+            <RadioButton
+                android:id="@+id/radioButtonTF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="TSFC" />
+
+            <RadioButton
+                android:id="@+id/radioButtonTC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="TSCC" />
+
+            <RadioButton
+                android:id="@+id/radioButtonMN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="MEDSAN" />
+
+            <RadioButton
+                android:id="@+id/radioButtonMAC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="MAC" />
+        </RadioGroup>
+
+    </LinearLayout>
+</ScrollView>
